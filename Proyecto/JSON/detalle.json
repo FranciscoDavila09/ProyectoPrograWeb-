@@ -1,0 +1,66 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "descripcion": "PROPEL ADVANCED PRO DISC 1",
+        "precio": 999,
+        "detalle": "Bicicleta aerodinámica de alto rendimiento para competición.",
+        "imagen": "Imagenes/Giant 1.jpg"
+      },
+      {
+        "id": 2,
+        "descripcion": "TCR ADVANCED DISC 1 KOM",
+        "precio": 1149,
+        "detalle": "Bicicleta de ruta ligera con frenos de disco para mayor control.",
+        "imagen": "Imagenes/Giant 2.jpg"
+      },
+      {
+        "id": 3,
+        "descripcion": "TRANCEX ADVANCED PRO 29 1",
+        "precio": 2599,
+        "detalle": "Bicicleta de montaña con suspensión avanzada para terrenos difíciles.",
+        "imagen": "Imagenes/Giant 3.jpg"
+      },
+      {
+        "id": 4,
+        "descripcion": "REIGN ADVANCED PRO 29 1",
+        "precio": 2399,
+        "detalle": "Bicicleta de enduro diseñada para descensos y rutas técnicas.",
+        "imagen": "Imagenes/Giant 4.jpg"
+      },
+      {
+        "id": 5,
+        "descripcion": "REIGN E+ 3",
+        "precio": 2399,
+        "detalle": "Bicicleta eléctrica de montaña para largas travesías con asistencia.",
+        "imagen": "Imagenes/Giant 5.jpg"
+      },
+      {
+        "id": 6,
+        "descripcion": "Casco Rev Elite MIPS",
+        "precio": 199,
+        "detalle": "Casco de ciclismo con tecnología MIPS para mayor seguridad.",
+        "imagen": "Imagenes/casco1.jpg"
+      }
+      ,
+      {
+        "id": 7,
+        "descripcion": "GAFAS DE CICLISMO",
+        "precio": 129,
+        "detalle": "Gafas deportivas para ciclismo con protección UV.",
+        "imagen": "Imagenes/gafas giant.png"
+      },
+      {
+        "id": 8,
+        "descripcion": "Rueda de Repuesto",
+        "precio": 89,
+        "detalle": "Rueda de bicicleta resistente para reemplazo o mejora.",
+        "imagen": "Imagenes/Rueda.jpeg"
+      }
+      
+      
+
+
+
+    ]
+  }

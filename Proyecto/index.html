@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Tienda de Bicicletas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/defaul.css">
+</head>
+<body>
+    <header></header>
+    <main class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">🚴‍♂️ Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#" onclick="mostrarInicio()">Inicio</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+
+                        <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-warning" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="contenido-principal">
+            <div class="container mt-4">
+                <h2>Bienvenido a BiciGo</h2>
+                <p>Encuentra la mejor selección de bicicletas y accesorios para ciclistas de todos los niveles.</p>
+            </div>
+
+<!--Seccion carusel-->
+
+
+<div id="carouselExampleCaptions" class="carousel slide mt-4">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Imagenes/carrucel 1.webp" class="d-block w-100" alt="Slide 1">
+        </div>
+        <div class="carousel-item">
+            <img src="Imagenes/Carrucel 2.webp" class="d-block w-100" alt="Slide 2">
+        </div>
+    
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+        
+        <!-- Sección de productos destacados -->
+
+<div class="container mt-5">
+    <h3 class="text-center mb-4">Bicicletas y accesorios populares</h3>
+
+    <div id="productos-container" class="row"></div>
+
+</div>
+
+
+
+
+
+
+    <!--    <div class="container mt-5">
+            <h3 class="text-center mb-4">Bicicletas y accesorios populares</h3>
+            <div id="productos-container" class="row"></div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Imagenes/Giant 1.jpg" class="card-img-top" alt="Bicicleta 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PROPEL ADVANCED PRO DISC 1</h5>
+                            <p class="text-danger">999 ¢ <small class="text-muted"><del>1,999 ¢</del></small></p>
+                            <p class="text-success">-50% Descuento</p>
+                            <button class="btn btn-primary ver-producto" data-id="1">Ver Producto</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Imagenes/Giant 2.jpg" class="card-img-top" alt="Bicicleta 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">TCR ADVANCED DISC 1 KOM</h5>
+                            <p class="text-danger">1,149 ¢ <small class="text-muted"><del>2,699 ¢</del></small></p>
+                            <p class="text-success">-57% Descuento</p>
+                            <button class="btn btn-primary ver-producto" data-id="1">Ver Producto</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Imagenes/Giant 3.jpg" class="card-img-top" alt="Bicicleta 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">TRANCEX ADVANCED PRO 29 1</h5>
+                            <p class="text-danger">2,599 ¢ <small class="text-muted"><del>4,499 ¢</del></small></p>
+                            <p class="text-success">-42% Descuento</p>
+                            <button class="btn btn-primary ver-producto" data-id="1">Ver Producto</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Imagenes/Giant 4.jpg" class="card-img-top" alt="Bicicleta 4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">REIGN ADVANCED PRO 29 1</h5>
+                            <p class="text-danger">2,399 ¢ <small class="text-muted"><del>3,499 ¢</del></small></p>
+                            <p class="text-success">-31% Descuento</p>
+                            <button class="btn btn-primary ver-producto" data-id="1">Ver Producto</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Imagenes/Giant 5.jpg" class="card-img-top" alt="Bicicleta 5">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">REIGN E+ 3</h5>
+                            <p class="text-danger">2,399 ¢ <small class="text-muted"><del>3,499 ¢</del></small></p>
+                            <p class="text-success">-31% Descuento</p>
+                            <button class="btn btn-primary ver-producto" data-id="1">Ver Producto</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Imagenes/Giant 6.jpg" class="card-img-top" alt="Bicicleta 6">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">TCR ADVANCED PRO DISC COMPACT 1</h5>
+                            <p class="text-danger">2,399 ¢ <small class="text-muted"><del>3,499 ¢</del></small></p>
+                            <p class="text-success">-31% Descuento</p>
+                            <button class="btn btn-primary ver-producto" data-id="1">Ver Producto</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Imagenes/Giant 7.jpg" class="card-img-top" alt="Bicicleta 7">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PROPEL ADVANCED DISC 1</h5>
+                            <p class="text-danger">2,399 ¢ <small class="text-muted"><del>3,499 ¢</del></small></p>
+                            <p class="text-success">-31% Descuento</p>
+                            <button class="btn btn-primary ver-producto" data-id="1">Ver Producto</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="Imagenes/Giant 8.jpg" class="card-img-top" alt="Bicicleta 8">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">TCR ADVANCED SL DISC 1</h5>
+                            <p class="text-danger">2,399 ¢ <small class="text-muted"><del>3,499 ¢</del></small></p>
+                            <p class="text-success">-31% Descuento</p>
+                            <button class="btn btn-primary ver-producto" data-id="1">Ver Producto</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>  -->
+      <!--Seccion nuestros servicios-->  
+      <div class="container contenedor-seccion">
+        <div class="row align-items-center">
+            <div class="col-md-6 servicio-texto">
+                <h2>Nuevos Servicios</h2>
+                <p>
+                    Descubre nuestra nueva línea de bicicletas diseñadas para cada tipo de aventura. 
+                    Si buscas adrenalina y resistencia en terrenos difíciles, nuestras <b>bicicletas de montaña</b> 
+                    son perfectas para ti. Con suspensiones avanzadas, llantas de gran agarre y cuadros 
+                    resistentes, están listas para enfrentarse a cualquier sendero. <br><br>
+
+                    Por otro lado, si prefieres la comodidad y la eficiencia en la ciudad, nuestras 
+                    <b>bicicletas urbanas</b> te ofrecen una conducción suave y ligera, ideal para el día a día. 
+                    Equipadas con diseños ergonómicos, sistemas de cambios optimizados y accesorios 
+                    funcionales, harán que moverte por la ciudad sea más fácil y ecológico. <br><br>
+
+                    ¡No importa el camino que elijas, tenemos la bicicleta ideal para ti! 🚴‍♂️🔥
+                </p>
+            </div>
+            <div class="col-md-6 servicio-img">
+                <img src="Imagenes/Giant 10.jpg" alt="Bicicleta 10">
+            </div>
+        </div>
+    </div>
+
+    <div id="contenido" class="container mt-4"></div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <!-- Información de Contacto -->
+            <div class="footer-info">
+                <h4>Nuestra tienda</h4>
+                <p><strong>📍 Ubicación:</strong> San José Centro, Frente al barrio chino</p>
+                <p><strong>📞 Teléfono:</strong> +506 6209-7471</p>
+                <p><strong>📧 Email:</strong> contacto@bicigo.com</p>
+                <p><strong>🕒 Horario:</strong> Lunes - Viernes: 9 AM - 6 PM</p>
+            </div>
+    
+            <!-- Enlaces de Navegación -->
+            <div class="footer-links">
+                <h4>🔗 Contáctanos </h4>
+                <ul>
+                    <li><a href="index.html">🏠 Inicio</a></li>
+                    <li><a href="contacto.html">📞 Contacto</a></li>
+                    <li><a href="tienda.html">🛒 Tienda</a></li>
+                    <li><a href="nosotros.html">ℹ Nosotros</a></li>
+                </ul>
+            </div>
+    
+            <!-- Redes Sociales -->
+            <div class="footer-social">
+                <h4>🌍 Síguenos</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="Imagenes/fb-icon.png" alt="Facebook"> <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="Imagenes/instagram-icon.png" alt="Instagram"> <span>Instagram</span>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="Imagenes/twitter-icon.png" alt="Twitter"> <span>Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Derechos Reservados -->
+        <p class="footer-rights">© 2025 BiciGo - Todos los derechos reservados.</p>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

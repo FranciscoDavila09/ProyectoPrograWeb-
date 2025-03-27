@@ -1,0 +1,169 @@
+{
+    "tienda": [
+        {
+            "id": 1,
+            "descripcion": "SLR 0 40 DISC",
+            "precioMin": 809,
+            "precioMax": 1099,
+            "imagen": "Tienda/SLR040DISC.jpeg",
+            "novedad": false
+          },
+        {
+            "id": 2,
+            "descripcion": "EnergyPak Smart 800",
+            "precioMin": 940,
+            "precioMax": 999,
+            "imagen": "Tienda/ENERGYPAKSMART800.jpg",
+            "novedad": true
+
+        },
+
+        {
+            "id": 3,
+            "descripcion": "SLR 1 40 DISC",
+            "precioMin": 619,
+            "precioMax": 919,
+            "imagen": "Tienda/SLR140DISC.jpeg",
+            "novedad": false
+
+        },
+        {
+            "id": 4,
+            "descripcion": "Manillar CONTACT SLR Integrado",
+            "precioMin": 450,
+            "precioMax": 499,
+            "imagen": "Tienda/ManillarCONTACTSLRIntegrado.jpg",
+            "novedad": false
+
+        },
+        {
+            "id": 5,
+            "descripcion": "Manillar Integrado CONTACT SLR TRAIL",
+            "precioMin": 420,
+            "precioMax": 449,
+            "imagen": "Tienda/ManillarIntegradoCONTACTSLRTRAIL.jpg",
+            "novedad": true
+
+        },
+        {
+            "id": 6,
+            "descripcion": "Ruedas TRA 29",
+            "precioMin": 300,
+            "precioMax": 400,
+            "imagen": "Tienda/RuedasTRA29.jpeg",
+            "novedad": true
+
+        },
+
+        {
+            "id": 7,
+            "descripcion": "Manillar CONTACT SLR AERO (Propel/EnviLiv 2023+)",
+            "precioMin": 300,
+            "precioMax": 349,
+            "imagen": "Tienda/ManillarCONTACTSLRAERO.jpeg",
+            "novedad": true
+
+        },
+
+        {
+            "id": 8,
+            "descripcion": "Fijación Potencia Propel/Enviliv 2023+ para Reposa-Brazos 180000378",
+            "precioMin": 300,
+            "precioMax": 339,
+            "imagen": "Tienda/FijaciónPotenciaPropel.jpg",
+            "novedad": false
+
+        },
+
+        {
+            "id": 9,
+            "descripcion": "Potencia Contact SLR Aero (Propel/Enviliv 2023+)",
+            "precioMin": 290,
+            "precioMax": 309,
+            "imagen": "Tienda/PotenciaContactSLRAero.jpeg",
+            "novedad": false
+
+        },
+
+        {
+            "id": 10,
+            "descripcion": "Potencia Contact SLR Aerolight",
+            "precioMin": 260,
+            "precioMax": 299,
+            "imagen": "Tienda/PotenciaContactSLRAerolight.png",
+            "novedad": true
+
+        },
+
+        {
+            "id": 11,
+            "descripcion": "RideControl EVO",
+            "precioMin": 250,
+            "precioMax": 275,
+            "imagen": "Tienda/RideControlEVO.jpg",
+            "novedad": false
+
+        },
+
+        {
+            "id": 12,
+            "descripcion": "Tija de sillín VECTOR SLR para Propel",
+            "precioMin": 220,
+            "precioMax": 269,
+            "imagen": "Tienda/TijadesillínVECTORSLRparaPropel.jpg",
+            "novedad": false
+
+        },
+
+        {
+            "id": 13,
+            "descripcion": "Tija de sillín D Fuse SLR Defy/Avail",
+            "precioMin": 220,
+            "precioMax": 249,
+            "imagen": "Tienda/TijadesillínDFuseSLRDefy.jpg",
+            "novedad": true
+
+        },
+
+
+        {
+            "id": 14,
+            "descripcion": "Sillín Contact SL",
+            "precioMin": 80,
+            "precioMax": 99,
+            "imagen": "Tienda/SillínContactSL.jpg",
+            "novedad": true
+
+        },
+
+
+        {
+            "id": 15,
+            "descripcion": "Pedales Plataforma Pinner Pro",
+            "precioMin": 80,
+            "precioMax": 99,
+            "imagen": "Tienda/PedalesPlataformaPinnerPro.jpg",
+            "novedad": false
+
+        },
+
+
+        {
+            "id": 16,
+            "descripcion": "Cabeza Tija de Sillín ISP y Esapciadores para TCR ISP 2016- 2020",
+            "precioMin": 80,
+            "precioMax": 89,
+            "imagen": "Tienda/CabezaTijadeSillínISPyEsapciadoresparaTCR.jpg",
+            "novedad": false
+
+        }
+
+
+
+
+
+
+
+    ]
+  }
+  
