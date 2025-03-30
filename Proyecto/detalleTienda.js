@@ -168,3 +168,6 @@ if (producto.versiones && Array.isArray(producto.versiones)) {
   
   // Mostrar resumen al cargar
 actualizarResumenCarrito();
+
+// Mostrar contenido del carrito al cargar
+renderizarCarrito();

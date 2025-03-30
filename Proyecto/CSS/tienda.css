@@ -1,3 +1,4 @@
+
 body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #f8f9fa;
@@ -167,5 +168,76 @@ body {
     margin-top: 20px;
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+
+
+
+/*Parte del carrito*/
+
+
+.carrito-item {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.2s ease-in-out;
+}
+
+.carrito-item:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.carrito-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.carrito-item .info {
+  flex-grow: 1;
+}
+
+.carrito-item .info p {
+  margin: 0;
+  font-weight: 600;
+}
+
+.carrito-item .info small {
+  color: #6c757d;
+}
+
+.carrito-item .acciones {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.carrito-item .acciones button {
+  border: none;
+  background: none;
+  color: #dc3545;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.carrito-item .acciones button:hover {
+  color: #a80000;
+  transform: scale(1.1);
+}
+
+.carrito-item select {
+  border-radius: 8px;
+  padding: 4px 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
 }
 
