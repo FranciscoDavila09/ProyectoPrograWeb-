@@ -165,6 +165,16 @@ if (producto.versiones && Array.isArray(producto.versiones)) {
     const offcanvas = new bootstrap.Offcanvas(document.getElementById('carritoOffcanvas'));
     offcanvas.show();
   });
+
+
+  // Botón "Realizar el pago"
+const botonPagar = document.querySelector("#carritoOffcanvas .btn.btn-primary");
+if (botonPagar) {
+  botonPagar.addEventListener("click", () => {
+    window.location.href = "pago.html";
+  });
+}
+
   
   // Mostrar resumen al cargar
 actualizarResumenCarrito();
