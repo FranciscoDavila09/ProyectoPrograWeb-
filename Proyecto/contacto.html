@@ -65,21 +65,48 @@
             <!-- Formulario de contacto -->
             <div class="contacto-form">
                 <h3>Envíanos un mensaje</h3>
-                <form>
+                <form id="registroForm">
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                      <label for="nombre" class="form-label">Nombre completo</label>
+                      <input type="text" class="form-control" id="nombre" required />
                     </div>
                     <div class="mb-3">
-                        <label for="correo" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="correo" placeholder="tuemail@example.com">
+                      <label for="email" class="form-label">Correo Electrónico</label>
+                      <input type="email" class="form-control" id="email" required />
                     </div>
                     <div class="mb-3">
-                        <label for="mensaje" class="form-label">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
+                      <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+                      <input type="date" class="form-control" id="fechaNacimiento" required />
                     </div>
+                    <div class="mb-3">
+                      <label for="rangoIngreso" class="form-label">Rango de Ingreso</label>
+                      <input type="number" class="form-control" id="rangoIngreso" required />
+                    </div>
+                    <div class="mb-3">
+                      <label for="genero" class="form-label">Género</label>
+                      <select class="form-select" id="genero" required>
+                        <option value="">Seleccione</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Otro">Otro</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="grado" class="form-label">Grado Académico</label>
+                      <select multiple class="form-select" id="grado">
+                        <option value="Secundaria">Secundaria</option>
+                        <option value="Técnico">Técnico</option>
+                        <option value="Bachillerato">Bachillerato</option>
+                        <option value="Licenciatura">Licenciatura</option>
+                        <option value="Maestría">Maestría</option>
+                      </select>
+                    </div>
+                  
+                    <!-- Campo oculto para edad -->
+                    <input type="hidden" id="edad" name="edad" />
+                  
                     <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+                  </form>
             </div>
 
             <!-- Información de contacto -->
@@ -185,6 +212,14 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
-        <script src="contacto.js"></script>
+     
+
+<!-- Librerías necesarias -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script src="contacto.js"></script>
+
     </body>
 </html>

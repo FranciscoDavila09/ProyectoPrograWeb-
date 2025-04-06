@@ -71,11 +71,22 @@ html {
 
       /* Ajustes del carrusel para que no se vea tan grande */
       #carouselExampleCaptions img {
-        height:1000px;
+        height: 400px;
         object-fit: cover;
-    }
-
-
+      }
+      
+      @media (min-width: 768px) {
+        #carouselExampleCaptions img {
+          height: 600px;
+        }
+      }
+      
+      @media (min-width: 992px) {
+        #carouselExampleCaptions img {
+          height: 800px;
+        }
+      }
+      
 
 
 
@@ -118,7 +129,17 @@ html {
     height: auto;
 }
 
-
+/*baja un poco el tamaño de la imagen en pantallas pequeñas*/
+@media (max-width: 576px) {
+    .servicio-texto p {
+      font-size: 16px;
+    }
+  
+    .servicio-texto h2 {
+      font-size: 24px;
+    }
+  }
+  
 
 
 
@@ -157,7 +178,15 @@ html {
 }
 
 
-
+#productos-container img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+  }
+  
 
 
 /* Footer */
@@ -176,6 +205,14 @@ html {
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
 
 /* Información de Contacto */
 .footer-info,
