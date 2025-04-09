@@ -19,6 +19,12 @@
     </head>
 
     <body>
+
+        
+
+
+
+
         <header>
             <!-- place navbar here -->
         </header>
@@ -26,7 +32,8 @@
             <!--Esto es el nav-->
 
             <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                <div class="container">
+                <div class="container-fluid px-3">
+
                     <a class="navbar-brand" href="#">🚴‍♂️ Home</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                         <span class="navbar-toggler-icon"></span>
@@ -35,7 +42,7 @@
                         <ul class="navbar-nav me-auto">
                             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
     
-                         
+                    
                     
                             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
 
@@ -53,7 +60,18 @@
             </nav>
 
 
+<!-- Botón para iniciar la música -->
+<!-- Botones de música -->
+<button id="btnMusica">🎵 Activar música</button>
 
+
+
+
+<audio id="musicaFondo" autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+  
 
              <!-- Sección Nosotros -->
     <section class="nosotros container">
@@ -112,13 +130,14 @@
 
         </main>
         <footer class="footer">
-            <div class="container footer-container">
+            <div class="footer-container">
+    
                 <!-- Información de Contacto -->
                 <div class="footer-info">
                     <h4>Nuestra tienda</h4>
                     <p><strong>📍 Ubicación:</strong> San José Centro, Frente al barrio chino</p>
                     <p><strong>📞 Teléfono:</strong> +506 6209-7471</p>
-                    <p><strong>📧 Email:</strong> contacto@bicigo.com</p>
+                    <p><strong>📧 Email:</strong> bicigo767@gmail.com</p>
                     <p><strong>🕒 Horario:</strong> Lunes - Viernes: 9 AM - 6 PM</p>
                 </div>
         
@@ -153,6 +172,8 @@
             <!-- Derechos Reservados -->
             <p class="footer-rights">© 2025 BiciGo - Todos los derechos reservados.</p>
         </footer>
+        
+        
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -165,5 +186,9 @@
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+        <script src="nosotros.js"></script>
     </body>
 </html>
