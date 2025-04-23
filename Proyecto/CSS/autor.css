@@ -1,17 +1,53 @@
-/* Estilos generales */
 body {
+    background-color: #ffffff;
+    color: #333;
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-}
+    margin: 0;
+    padding: 0;
+  }
+
+  .autor-container {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  }
+
+  .autor-container h1 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .autor-container p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .btn-volver {
+    display: block;
+    margin: 30px auto 0;
+  }
+
+  @media (max-width: 576px) {
+    .autor-container {
+      padding: 20px;
+      margin: 30px 15px;
+    }
+
+    .autor-container p {
+      font-size: 1rem;
+    }
+  }
 
 
 
-
-
-
-
-
-/* Footer */
+  /* Footer */
 .footer {
     background: #222;
     color: white;
@@ -105,6 +141,7 @@ body {
     font-size: 0.9rem;
     opacity: 0.8;
 }
+
 /* Footer responsive redes sociales */
 @media (max-width: 600px) {
     .social-icons {
@@ -126,28 +163,4 @@ body {
     }
   }
   
-
-
-
-
-
-/*Parte Productos*/
-
-.detalle-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
-.detalle-container img {
-    max-width: 50%;
-    height: auto;
-}
-
-.detalle-info {
-    flex: 1;
-}
-
 

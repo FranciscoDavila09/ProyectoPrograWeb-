@@ -48,7 +48,7 @@ if (producto.versiones && Array.isArray(producto.versiones)) {
   producto.versiones.forEach(version => {
     const btn = document.createElement('button');
     btn.className = 'btn btn-outline-dark me-2 mb-2';
-    btn.textContent = `${version.nombre} (${version.precio} €)`;
+    btn.textContent = `${version.nombre} (${version.precio} $)`;
     versionContainer.appendChild(btn);
   });
 } else {
@@ -97,7 +97,7 @@ if (producto.versiones && Array.isArray(producto.versiones)) {
         <img src="${item.imagen}" alt="${item.descripcion}">
         <div class="info">
           <p>${item.descripcion}</p>
-          <small>${item.precioMax} €</small>
+          <small>${item.precioMax} $</small>
         </div>
       </div>
       <div class="acciones">
@@ -113,7 +113,7 @@ if (producto.versiones && Array.isArray(producto.versiones)) {
       contenedor.appendChild(div);
     });
   
-    totalSpan.textContent = `${total.toFixed(2)} €`;
+    totalSpan.textContent = `${total.toFixed(2)} $`;
   
     // Cambio de cantidad
     contenedor.querySelectorAll("select").forEach(select => {
@@ -156,7 +156,7 @@ if (producto.versiones && Array.isArray(producto.versiones)) {
     const cantidad = carrito.reduce((acc, item) => acc + item.cantidad, 0);
   
     document.getElementById('contador-carrito').textContent = cantidad;
-    document.getElementById('total-carrito').textContent = `${total.toFixed(2)} €`;
+    document.getElementById('total-carrito').textContent = `${total.toFixed(2)} $`;
   }
 
 //Hacer clic en el ícono para abrir el carrito (Offcanvas)

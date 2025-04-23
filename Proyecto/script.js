@@ -30,7 +30,7 @@ function mostrarProductos(productos) {
                 <img src="${producto.imagen}" class="card-img-top" alt="${producto.descripcion}">
                 <div class="card-body text-center">
                     <h5 class="card-title">${producto.descripcion}</h5>
-                    <p class="text-danger">${producto.precio} ¢</p>
+                    <p class="text-danger">${producto.precio} $</p>
                     <button class="btn btn-primary ver-producto" data-id="${producto.id}">Ver Producto</button>
                 </div>
             </div>

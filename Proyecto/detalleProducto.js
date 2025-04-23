@@ -10,13 +10,13 @@ fetch('./JSON/detalle.json')
       document.getElementById('producto-imagen').src = producto.imagen;
       document.getElementById('producto-titulo').textContent = producto.descripcion;
       document.getElementById('producto-detalle').textContent = producto.detalle;
-      document.getElementById('producto-precio-rango').textContent = `${producto.precioMin} € - ${producto.precioMax} €`;
+      document.getElementById('producto-precio-rango').textContent = `${producto.precioMin} $ - ${producto.precioMax} $`;
 
       const versionesContainer = document.getElementById('producto-versiones');
       producto.versiones.forEach(version => {
         const btn = document.createElement('button');
         btn.className = 'btn btn-outline-dark me-2 mb-2';
-        btn.textContent = `${version.nombre} (${version.precio} €)`;
+        btn.textContent = `${version.nombre} (${version.precio} $)`;
         versionesContainer.appendChild(btn);
       });
     } else {

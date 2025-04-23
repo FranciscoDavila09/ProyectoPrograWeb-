@@ -12,7 +12,7 @@ fetch('./JSON/tienda.json')
           <img src="${producto.imagen}" class="card-img-top" alt="${producto.descripcion}">
           <div class="card-body">
             <h5 class="card-title">${producto.descripcion}</h5>
-            <p class="card-text">PVP ${producto.precioMin} € - PVP ${producto.precioMax} €</p>
+            <p class="card-text">PVP ${producto.precioMin} $ - PVP ${producto.precioMax} $</p>
             <a href="detalleTienda.html?id=${producto.id}" class="btn btn-link text-primary">Más info →</a>
           </div>
         </div>
@@ -49,7 +49,7 @@ fetch('./JSON/tienda.json')
         <img src="${item.imagen}" alt="${item.descripcion}">
         <div class="info">
           <p>${item.descripcion}</p>
-          <small>${item.precioMax} €</small>
+          <small>${item.precioMax} $</small>
         </div>
       </div>
       <div class="acciones">
@@ -65,7 +65,7 @@ fetch('./JSON/tienda.json')
       contenedor.appendChild(div);
     });
   
-    totalSpan.textContent = `${total.toFixed(2)} €`;
+    totalSpan.textContent = `${total.toFixed(2)} $`;
   
     // Cambio de cantidad
     contenedor.querySelectorAll("select").forEach(select => {
@@ -105,7 +105,7 @@ fetch('./JSON/tienda.json')
     const cantidad = carrito.reduce((acc, item) => acc + item.cantidad, 0);
   
     document.getElementById('contador-carrito').textContent = cantidad;
-    document.getElementById('total-carrito').textContent = `${total.toFixed(2)} €`;
+    document.getElementById('total-carrito').textContent = `${total.toFixed(2)} $`;
   }
 
 //Hacer clic en el ícono para abrir el carrito (Offcanvas)

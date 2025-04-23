@@ -180,6 +180,28 @@ body {
   opacity: 0.8;
 }
 
+/* Footer responsive redes sociales */
+@media (max-width: 600px) {
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .social-icons a {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-icons span {
+    font-size: 1rem;
+    display: inline-block;
+    word-break: break-word;
+  }
+}
+
+
 
 
 

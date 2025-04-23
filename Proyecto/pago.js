@@ -15,17 +15,17 @@ carrito.forEach(item => {
       <img src="${item.imagen}" alt="${item.descripcion}" style="width: 60px; height: 60px; object-fit: contain; border-radius: 5px; margin-right: 10px;">
       <div>
         <h6>${item.descripcion}</h6>
-        <p class="mb-0"><strong>Precio:</strong> ${item.precioMax} €</p>
+        <p class="mb-0"><strong>Precio:</strong> ${item.precioMax} $</p>
         <p class="mb-0"><strong>Cantidad:</strong> ${item.cantidad}</p>
-        <p class="mb-0"><strong>Subtotal:</strong> ${subtotal.toFixed(2)} €</p>
+        <p class="mb-0"><strong>Subtotal:</strong> ${subtotal.toFixed(2)} $</p>
       </div>
     </div>
   `;
 });
 
-html += `<div class="total-pago mt-3 text-end fw-bold fs-5">Total: ${total.toFixed(2)} €</div>`;
+html += `<div class="total-pago mt-3 text-end fw-bold fs-5">Total: ${total.toFixed(2)} $</div>`;
 contenedorResumen.innerHTML = html;
-botonPagar.innerText = `Pagar ${total.toFixed(2)} €`;
+botonPagar.innerText = `Pagar ${total.toFixed(2)} $`;
 
 
 // Evento al enviar el formulario de pago
@@ -33,12 +33,25 @@ formPago.addEventListener("submit", (e) => {
   e.preventDefault();
 
   const campos = ["numeroTarjeta", "cvc", "expiracion", "nombreTarjeta"];
+  let camposValidos = true;
+
   for (const id of campos) {
-    if (!document.getElementById(id).value.trim()) {
-      Swal.fire("Faltan campos", "Por favor, complete todos los datos del formulario.", "warning");
-      return;
+    const campo = document.getElementById(id);
+    if (!campo.value.trim()) {
+      campo.classList.add("is-invalid");
+      campo.classList.remove("is-valid");
+      camposValidos = false;
+    } else {
+      campo.classList.remove("is-invalid");
+      campo.classList.add("is-valid");
     }
   }
+  
+  if (!camposValidos) {
+    Swal.fire("Faltan campos", "Por favor, complete todos los datos del formulario.", "warning");
+    return;
+  }
+  
 
   const tarjeta = document.getElementById("numeroTarjeta").value.trim();
   const cvc = document.getElementById("cvc").value.trim();
@@ -67,5 +80,23 @@ formPago.addEventListener("submit", (e) => {
     formPago.reset();
     contenedorResumen.innerHTML = "";
     botonPagar.innerText = "Pagar";
+    // Limpiar clases de validación después del pago
+document.querySelectorAll("#form-pago input, #form-pago select").forEach(campo => {
+  campo.classList.remove("is-valid", "is-invalid");
+});
+
+  });
+});
+
+// Validación visual en tiempo real
+document.querySelectorAll("#form-pago input, #form-pago select").forEach(campo => {
+  campo.addEventListener("input", () => {
+    if (campo.checkValidity()) {
+      campo.classList.remove("is-invalid");
+      campo.classList.add("is-valid");
+    } else {
+      campo.classList.remove("is-valid");
+      campo.classList.add("is-invalid");
+    }
   });
 });

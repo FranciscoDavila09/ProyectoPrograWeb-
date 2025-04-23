@@ -156,7 +156,350 @@
             "imagen": "Tienda/CabezaTijadeSillínISPyEsapciadoresparaTCR.jpg",
             "novedad": false
 
-        }
+        },
+
+
+        {
+            "id": 17,
+            "descripcion": "Bicicleta Doble Anthem Advanced 29",
+            "precioMin": 3299,
+            "precioMax": 4399,
+            "imagen": "Tienda/BicicletaDobleAnthemAdvanced.jpg",
+            "novedad": true
+
+        },
+
+
+        {
+            "id": 18,
+            "descripcion": "Kit cuadro Anthem Advanced 29",
+            "precioMin": 2500,
+            "precioMax": 2899,
+            "imagen": "Tienda/KitcuadroAnthemAdvanced.jpg",
+            "novedad": true
+
+        },
+            
+            {
+                "id": 19,
+                "descripcion": "Anthem Advanced 29",
+                "precioMin": 3524,
+                "precioMax": 6000,
+                "imagen": "Tienda/AnthemAdvanced29.jpg",
+                "novedad": false
+    
+            },
+    
+            {
+                "id": 20,
+                "descripcion": "Cuadro Trance X Advanced",
+                "precioMin": 4499,
+                "precioMax": 5999,
+                "imagen": "Tienda/CuadroTranceXAdvanced.jpg",
+                "novedad": true
+    
+            },
+    
+            {
+                "id": 21,
+                "descripcion": "Cuadro Reign Advanced",
+                "precioMin": 4499,
+                "precioMax": 6000,
+                "imagen": "Tienda/CuadroReignAdvanced.jpg",
+                "novedad": true
+    
+            },
+    
+            {
+                "id": 22,
+                "descripcion": "Reign Advanced",
+                "precioMin": 7000,
+                "precioMax": 8000,
+                "imagen": "Tienda/ReignAdvanced.jpg",
+                "novedad": true
+    
+            },
+    
+            {
+                "id": 23,
+                "descripcion": "Stormguard E+",
+                "precioMin": 5500,
+                "precioMax": 6000,
+                "imagen": "Tienda/StormguardE+.jpg",
+                "novedad": false
+    
+            },
+    
+            {
+                "id": 24,
+                "descripcion": "AnyTour X E+",
+                "precioMin": 3600,
+                "precioMax": 4500,
+                "imagen": "Tienda/AnyTourXE+.jpg",
+                "novedad": true
+    
+            },
+    
+            {
+                "id": 25,
+                "descripcion": "Escape Disc",
+                "precioMin": 400,
+                "precioMax": 500,
+                "imagen": "Tienda/EscapeDisc.jpg",
+                "novedad": false
+    
+            },
+                
+                {
+                    "id": 26,
+                    "descripcion": "Pedales Auto Trail Elite",
+                    "precioMin": 100,
+                    "precioMax": 150,
+                    "imagen": "Tienda/PedalesAutoTrailElite.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 27,
+                    "descripcion": "Pedales automáticos XC PRO",
+                    "precioMin": 600,
+                    "precioMax": 700,
+                    "imagen": "Tienda/PedalesautomáticosXCPRO.jpg",
+                    "novedad": false
+        
+                },
+        
+                {
+                    "id": 28,
+                    "descripcion": "Casco RAIL MIPS",
+                    "precioMin": 100,
+                    "precioMax": 200,
+                    "imagen": "Tienda/CascoRAILMIPS.jpeg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 29,
+                    "descripcion": "Casco REV COMP MIPS",
+                    "precioMin": 80,
+                    "precioMax": 150,
+                    "imagen": "Tienda/CascoREVCOMPMIPS.jpeg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 30,
+                    "descripcion": "Casco PATH MIPS",
+                    "precioMin": 50,
+                    "precioMax": 70,
+                    "imagen": "Tienda/CascoPATHMIPS.jpg",
+                    "novedad": false
+        
+                },
+        
+                {
+                    "id": 31,
+                    "descripcion": "Gafas Giant JULBO META Spectron",
+                    "precioMin": 96,
+                    "precioMax": 130,
+                    "imagen": "Tienda/GafasGiantJULBOMETASpectron.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 32,
+                    "descripcion": "Gafas Giant JULBO ULTIMATE Spectron",
+                    "precioMin": 120,
+                    "precioMax": 150,
+                    "imagen": "Tienda/GafasGiantJULBOULTIMATESpectron.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 33,
+                    "descripcion": "Gafas Giant JULBO EDGE Fotocromáticas",
+                    "precioMin": 220,
+                    "precioMax": 300,
+                    "imagen": "Tienda/GafasGiantJULBOEDGEFotocromáticas.png",
+                    "novedad": false
+        
+                },
+        
+                {
+                    "id": 34,
+                    "descripcion": "Guantes Largos CHILL X",
+                    "precioMin": 40,
+                    "precioMax": 60,
+                    "imagen": "Tienda/GuantesLargosCHILLX.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 35,
+                    "descripcion": "Guantes OPUS",
+                    "precioMin": 20,
+                    "precioMax": 30,
+                    "imagen": "Tienda/GuantesOPUS.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 36,
+                    "descripcion": "Guantes ELEVATE",
+                    "precioMin": 20,
+                    "precioMax": 25,
+                    "imagen": "Tienda/GuantesELEVATE.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 37,
+                    "descripcion": "Candado SURELOCK FORCE 1",
+                    "precioMin": 40,
+                    "precioMax": 55,
+                    "imagen": "Tienda/CandadoSURELOCKFORCE1.jpg",
+                    "novedad": false
+        
+                },
+        
+                {
+                    "id": 38,
+                    "descripcion": "Candado SURELOCK FLEX 15",
+                    "precioMin": 20,
+                    "precioMax": 35,
+                    "imagen": "Tienda/CandadoSURELOCKFLEX15.jpg",
+                    "novedad": false
+        
+                },
+        
+                {
+                    "id": 39,
+                    "descripcion": "Candado SURELOCK FLEX COMBO 15",
+                    "precioMin": 20,
+                    "precioMax": 23,
+                    "imagen": "Tienda/CandadoSURELOCKFLEXCOMBO15.jpg",
+                    "novedad": false
+        
+                },
+        
+                {
+                    "id": 40,
+                    "descripcion": "Zapatillas SURGE PRO",
+                    "precioMin": 299,
+                    "precioMax": 330,
+                    "imagen": "Tienda/ZapatillasSURGEPRO.jpg",
+                    "novedad": true
+                },
+        
+                {
+                    "id": 41,
+                    "descripcion": "Maillot M/C Giant GRAVEL",
+                    "precioMin": 120,
+                    "precioMax": 150,
+                    "imagen": "Tienda/MaillotMCGiantGRAVEL.jpg",
+                    "novedad": false
+        
+                },
+        
+                {
+                    "id": 42,
+                    "descripcion": "Maillot M/C INVICTUS",
+                    "precioMin": 150,
+                    "precioMax": 200,
+                    "imagen": "Tienda/MaillotMCINVICTUS.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 43,
+                    "descripcion": "Short Trail LAYER",
+                    "precioMin": 80,
+                    "precioMax": 99,
+                    "imagen": "Tienda/ShortTrailLAYER.jpg",
+                    "novedad": true
+        
+                } ,
+        
+                {
+                    "id": 44,
+                    "descripcion": "Maillot M/L Trail COBALT",
+                    "precioMin": 80,
+                    "precioMax": 99,
+                    "imagen": "Tienda/MaillotMLTrailCOBALT.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 45,
+                    "descripcion": "Maillot M/C OPUS",
+                    "precioMin": 100,
+                    "precioMax": 120,
+                    "imagen": "Tienda/MaillotMCOPUS.jpg",
+                    "novedad": false
+        
+                },
+        
+                {
+                    "id": 46,
+                    "descripcion": "Zapatillas BOLT",
+                    "precioMin": 90,
+                    "precioMax": 100,
+                    "imagen": "Tienda/ZapatillasBOLT.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 47,
+                    "descripcion": "Short Trail VOLCANO",
+                    "precioMin": 150,
+                    "precioMax": 200,
+                    "imagen": "Tienda/ShortTrailVOLCANO.jpg",
+                    "novedad": false
+        
+                },
+        
+                {
+                    "id": 48,
+                    "descripcion": "Maillot MC Giant Factory Off Road Team Legends Edition",
+                    "precioMin": 70,
+                    "precioMax": 100,
+                    "imagen": "Tienda/MaillotMCGiantFactoryOffRoadTeamLegendsEdition.jpeg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 49,
+                    "descripcion": "Short Baggy CORE",
+                    "precioMin": 50,
+                    "precioMax": 70,
+                    "imagen": "Tienda/ShortBaggyCORE.jpg",
+                    "novedad": true
+        
+                },
+        
+                {
+                    "id": 50,
+                    "descripcion": "Short COBALT",
+                    "precioMin": 50,
+                    "precioMax": 70,
+                    "imagen": "Tienda/ShortCOBALT.jpeg",
+                    "novedad": true
+        
+                }
+        
+           
 
 
 

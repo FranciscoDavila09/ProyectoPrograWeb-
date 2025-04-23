@@ -252,3 +252,40 @@ body {
   opacity: 0.8;
 }
 
+/* Footer responsive redes sociales */
+@media (max-width: 600px) {
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .social-icons a {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-icons span {
+    font-size: 1rem;
+    display: inline-block;
+    word-break: break-word;
+  }
+}
+
+
+/* Esta parte es para dos colores que se cambia si esta correcto o no, el primero es verde y el otro rojo */
+
+/* Bordes para validación visual */
+input.is-valid, select.is-valid {
+  border: 2px solid #28a745 !important; 
+  background-color: #f1fdf4;
+}
+
+input.is-invalid, select.is-invalid {
+  border: 2px solid #dc3545 !important; 
+  background-color: #fff5f5;
+}
+
+
+
