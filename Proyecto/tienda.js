@@ -26,6 +26,26 @@ fetch('./JSON/tienda.json')
 
 
 
+// Esto es del carrito para ir a pago 
+
+document.getElementById("btnIrPago").addEventListener("click", () => {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  if (carrito.length === 0) {
+    Swal.fire("Carrito vacío", "Agrega productos antes de continuar con el pago.", "info");
+    return;
+  }
+
+  // Redireccionar al formulario de pago
+  window.location.href = "pago.html";
+});
+
+
+
+
+
+
+
+
 
   /// Renderiza el carrito en la página de tienda.html
 
@@ -127,3 +147,36 @@ document.getElementById("icono-carrito").addEventListener("click", (e) => {
   const offcanvas = new bootstrap.Offcanvas(document.getElementById('carritoOffcanvas'));
   offcanvas.show();
 });
+
+
+
+
+
+/// En la parte del buscador de la tienda para que busque por nombre o descripción del producto
+
+function buscarProducto(event) {
+  event.preventDefault();
+
+  const inputBusqueda = document.getElementById("busqueda-input").value.toLowerCase().trim();
+  const tarjetas = document.querySelectorAll("#contenedor-productos .card");
+
+  let encontrado = false;
+
+  tarjetas.forEach(card => {
+    const titulo = card.querySelector(".card-title").textContent.toLowerCase();
+    if (titulo.includes(inputBusqueda)) {
+      card.classList.add("border", "border-success", "border-3"); // resaltado
+      encontrado = true;
+    } else {
+      card.classList.remove("border", "border-success", "border-3");
+    }
+  });
+
+  if (!encontrado) {
+    Swal.fire({
+      icon: "warning",
+      title: "Producto no encontrado",
+      text: "No se encontraron coincidencias con tu búsqueda.",
+    });
+  }
+}

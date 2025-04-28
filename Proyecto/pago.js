@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 const contenedorResumen = document.getElementById("resumen-producto");
 const botonPagar = document.getElementById("btn-pagar");
 const formPago = document.getElementById("form-pago");
@@ -32,6 +44,44 @@ botonPagar.innerText = `Pagar ${total.toFixed(2)} $`;
 formPago.addEventListener("submit", (e) => {
   e.preventDefault();
 
+
+
+// Verificar si el usuario está logueado
+const usuarioActual = JSON.parse(localStorage.getItem('usuarioActual'));
+
+if (!usuarioActual) {
+  Swal.fire({
+    icon: 'info',
+    title: 'Inicio de sesión requerido',
+    text: 'Debes iniciar sesión o registrarte para realizar el pago.',
+    confirmButtonText: 'Aceptar'
+  }).then(() => {
+    window.location.href = "index.html"; 
+  });
+  return; 
+}
+
+
+
+  // Verificar si el carrito tiene productos
+  const carritoActualizado = JSON.parse(localStorage.getItem('carrito')) || [];
+  if (carritoActualizado.length === 0) {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Carrito vacío',
+      text: 'Tu carrito está vacío. Agrega productos antes de pagar.',
+      confirmButtonText: 'Aceptar'
+    });
+    return;
+  }
+
+
+// Validar campos del formulario
+
+
+
+
+
   const campos = ["numeroTarjeta", "cvc", "expiracion", "nombreTarjeta"];
   let camposValidos = true;
 
@@ -55,6 +105,7 @@ formPago.addEventListener("submit", (e) => {
 
   const tarjeta = document.getElementById("numeroTarjeta").value.trim();
   const cvc = document.getElementById("cvc").value.trim();
+  const expiracion = document.getElementById("expiracion").value.trim();
   const regexTarjeta = /^\d{4} \d{4} \d{4} \d{4}$/;
   const regexCVC = /^\d{3,4}$/;
 
@@ -68,6 +119,23 @@ formPago.addEventListener("submit", (e) => {
     return;
   }
 
+
+  const [mes, año] = expiracion.split('/').map(part => parseInt(part));
+  const añoActual = new Date().getFullYear() % 100;
+
+  if (año < 25) {
+    Swal.fire("Fecha inválida", "La tarjeta debe expirar en el año 2025 o posterior.", "error");
+    return;
+  }
+
+  if (mes < 1 || mes > 12) {
+    Swal.fire("Fecha inválida", "El mes de expiración debe ser entre 01 y 12.", "error");
+    return;
+  }
+
+
+
+
   //  Mostrar mensaje de pago exitoso
   Swal.fire({
     icon: 'success',
@@ -76,10 +144,16 @@ formPago.addEventListener("submit", (e) => {
     showConfirmButton: false,
     timer: 2500
   }).then(() => {
+    //  Limpiar carrito y cerrar sesión
     localStorage.removeItem("carrito");
+    localStorage.removeItem("usuarioActual");
     formPago.reset();
     contenedorResumen.innerHTML = "";
     botonPagar.innerText = "Pagar";
+
+
+
+
     // Limpiar clases de validación después del pago
 document.querySelectorAll("#form-pago input, #form-pago select").forEach(campo => {
   campo.classList.remove("is-valid", "is-invalid");
@@ -99,4 +173,14 @@ document.querySelectorAll("#form-pago input, #form-pago select").forEach(campo =
       campo.classList.add("is-invalid");
     }
   });
+});
+
+
+
+//Máscara automática para el número de tarjeta agrupa en bloques de 4
+document.getElementById('numeroTarjeta').addEventListener('input', function (e) {
+  let value = e.target.value.replace(/\D/g, ''); 
+  value = value.substring(0, 16); 
+  value = value.replace(/(\d{4})(?=\d)/g, '$1 '); 
+  e.target.value = value;
 });

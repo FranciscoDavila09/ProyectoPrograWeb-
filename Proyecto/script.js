@@ -46,3 +46,54 @@ function mostrarProductos(productos) {
         });
     });
 }
+
+
+
+
+
+
+
+
+
+
+// Esto es del login para manejar los modales y LocalStorage 
+
+document.getElementById('btnLogin').addEventListener('click', () => {
+    const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
+    loginModal.show();
+  });
+
+  document.getElementById('btnShowRegistro').addEventListener('click', (e) => {
+    e.preventDefault();
+    bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
+    const registroModal = new bootstrap.Modal(document.getElementById('registroModal'));
+    registroModal.show();
+  });
+
+  document.getElementById('registroForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const correo = document.getElementById('correo').value;
+    const contrasena = document.getElementById('contrasena').value;
+
+    localStorage.setItem('usuario', JSON.stringify({ nombre, apellido, correo, contrasena }));
+    alert('Usuario registrado con éxito');
+    bootstrap.Modal.getInstance(document.getElementById('registroModal')).hide();
+  });
+
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const correo = document.getElementById('loginCorreo').value;
+    const contrasena = document.getElementById('loginContrasena').value;
+    const usuario = JSON.parse(localStorage.getItem('usuario'));
+
+    if (usuario && usuario.correo === correo && usuario.contrasena === contrasena) {
+        
+        localStorage.setItem('usuarioActual', JSON.stringify(usuario));
+      alert(`Bienvenido ${usuario.nombre} ${usuario.apellido}`);
+      bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
+    } else {
+      alert('Correo o contraseña incorrectos.');
+    }
+  });
