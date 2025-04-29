@@ -24,17 +24,20 @@ function mostrarProductos(productos) {
 
     productos.forEach(producto => {
         let card = document.createElement("div");
-        card.className = "col-md-3";
+        card.className = "col-md-3 d-flex"; 
         card.innerHTML = `
-            <div class="card">
+            <div class="card h-100 d-flex flex-column justify-content-between">
                 <img src="${producto.imagen}" class="card-img-top" alt="${producto.descripcion}">
-                <div class="card-body text-center">
+                <div class="card-body text-center d-flex flex-column justify-content-between">
                     <h5 class="card-title">${producto.descripcion}</h5>
                     <p class="text-danger">${producto.precio} $</p>
-                    <button class="btn btn-primary ver-producto" data-id="${producto.id}">Ver Producto</button>
+                    <div class="mt-auto">
+                        <button class="btn btn-primary ver-producto" data-id="${producto.id}">Ver Producto</button>
+                    </div>
                 </div>
             </div>
         `;
+        
         contenedor.appendChild(card);
     });
 
@@ -89,7 +92,7 @@ document.getElementById('btnLogin').addEventListener('click', () => {
     const usuario = JSON.parse(localStorage.getItem('usuario'));
 
     if (usuario && usuario.correo === correo && usuario.contrasena === contrasena) {
-        
+
         localStorage.setItem('usuarioActual', JSON.stringify(usuario));
       alert(`Bienvenido ${usuario.nombre} ${usuario.apellido}`);
       bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
