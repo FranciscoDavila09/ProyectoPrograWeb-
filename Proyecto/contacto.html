@@ -9,7 +9,12 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-<link rel="stylesheet" href="CSS/conatcto.css">
+
+
+
+
+
+        <link rel="stylesheet" href="CSS/conatcto.css">
         <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -66,7 +71,7 @@
         <div class="contacto-wrapper">
             <!-- Formulario de contacto -->
             <div class="contacto-form">
-                <h3>Envíanos un mensaje</h3>
+                <h3>Envíanos tu información</h3>
                 <form id="registroForm">
                     <div class="mb-3">
                       <label for="nombre" class="form-label">Nombre completo</label>
@@ -148,17 +153,30 @@
 
 
 <!-- Parte Google Maps -->
-<div id="map" class="w-100">
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251482.63748149088!2d-84.44630935045346!3d9.982436402856871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fc03cf2d4691%3A0x4a5dca59dec9d927!2sBike%20Store%20Costa%20Rica!5e0!3m2!1ses-419!2scr!4v1742327419497!5m2!1ses-419!2scr" 
-        width="100%" 
-        height="500" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
+<h3 class="text-center mb-4">Nuestra ubicación: BiciGo</h3>
+
+
+<!-- Hoja de estilos de Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<!-- Contenedor del mapa -->
+<div id="mi_mapa" style="height: 400px; width: 100%; border-radius: 10px;"></div>
+
+<!-- Script de Leaflet -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- Script personalizado del mapa -->
+<script>
+  const map = L.map("mi_mapa").setView([9.933333, -84.083333], 17);
+
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: 'Mapa por <a href="https://www.openstreetmap.org/">OpenStreetMap</a>'
+  }).addTo(map);
+
+  const marker = L.marker([9.933333, -84.083333]).addTo(map);
+  marker.bindPopup("<b>BiciGo</b><br>Frente al Barrio Chino, San José.").openPopup();
+</script>
+
 
         </main>
         <footer class="footer">

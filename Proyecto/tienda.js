@@ -165,7 +165,7 @@ function buscarProducto(event) {
   tarjetas.forEach(card => {
     const titulo = card.querySelector(".card-title").textContent.toLowerCase();
     if (titulo.includes(inputBusqueda)) {
-      card.classList.add("border", "border-success", "border-3"); // resaltado
+      card.classList.add("border", "border-success", "border-3"); 
       encontrado = true;
     } else {
       card.classList.remove("border", "border-success", "border-3");
